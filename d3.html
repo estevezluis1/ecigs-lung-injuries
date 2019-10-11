@@ -213,7 +213,7 @@
     const color = d3.scaleQuantize([0, 150], d3.schemeBlues[6]);
 
     d3.json('https://cdn.jsdelivr.net/npm/us-atlas@2/us/10m.json').then(function(usData) {
-      d3.json('https://www.cdc.gov/tobacco/basic_information/e-cigarettes/assets/lung-injury-cases-map.json').then(function(source) {
+      d3.json('https://gist.githubusercontent.com/estevezluis1/9549b03787b7d336ac08c542f2ba833b/raw/170a6bd1aa1dcad2b5aeb7b69023c2f837c7bf63/lung-injury-cases-map.json').then(function(source) {
         const data = new Map(source.data.map(d => [d.STATE, d.Rating !== null ? d.Rating : 0]));
         document.getElementById('map').append(chart(usData, data));
       });
