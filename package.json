@@ -1,0 +1,32 @@
+{
+  "name": "ecigs-lung-injuries",
+  "version": "1.0.0",
+  "title": "E-Cigs Lung Injuries",
+  "description": "D3 Map displaying reported E-Cigarettes lung injuries",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estevezluis1/ecigs-lung-injuries.git"
+  },
+  "author": "Luis Estevez <estevezluis1@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estevezluis1/ecigs-lung-injuries/issues"
+  },
+  "homepage": "https://github.com/estevezluis1/ecigs-lung-injuries#readme",
+  "dependencies": {
+    "d3": "5.12.0",
+    "lodash": "4.17.15",
+    "topojson-client": "3.0.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "4.41.0",
+    "webpack-cli": "3.3.9"
+  }
+}
